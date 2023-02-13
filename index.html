@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <!-- Emmet shorthand used to create quick layout of header, body, and sections -->
+  <header>
+    <h1>Robert's Profile Page</h1>
+  </header>
+  <body>
+    <!-- Boostrap navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" a href="rczajka-02.html">Photos</a>
+            </li>
+          </ul>
+          <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Scaling Rows and Columns Section-->
+    <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-6">
+          <h3>Professional Experience</h3>
+          <b>IT Help Desk Technician, Illinois State University, Normal, Illinois</b><br>
+            -Providing technology support to staff members within the Division of Student Affairs.<br>
+            -Setting up and delivering equipment rentals across campus.<br>
+            -Creating detailed tickets using Cherwell Software to track a variety of technology issues.<br>
+            -Using Microsoft Active Directory to change permissions and access rolegroups.<br>            
+            -Providing first hand customer support and technology advice on-call and in person.<br>
+        </div>
+        <div class="col-sm-8 col-md-6">
+          <h3>About Me</h3>
+          <b>Interests And Hobbies</b><br>
+            -Hiking and Camping - Taken several roadtrips out west to Rocky Mountain National Park the past few Summers to see the mountains.<br>
+            -Building Computers - Currently attempting to assemble a small form factor PC that takes up minimal space while maintaining performance.<br>
+            -Writing Java Plugins - Experimenting with coding plugins for games such as Minecraft<br>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-6">
+          <h3>Education</h3>
+            -Illinois State University, Normal, Illinois<br>
+            -Bachelor of Science in Information Systems, Web Application/Development Sequence<br>
+        </div>
+        <div class="col-sm-8 col-md-6">
+          <h3>Favorite Film Series</h3>
+            -Lord Of The Rings
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Photo Album with Bootstrap-->
+  <section>
+    <div class="container mt-3">
+      <h2>Recent Photos 2022</h2>
+      <p>Some photos from the Empire State Building and Times Square.</p>            
+      <img src="./images/image2.jpg" class="rounded" alt="nyc" width="304" height="236">
+      <img src="./images/image3.jpg" class="rounded" alt="nyc" width="304" height="236"> 
+      <img src="./images/image4.jpg" class="rounded" alt="nyc" width="304" height="236">
+      <img src="./images/image5.jpg" class="rounded" alt="nyc" width="304" height="236">
+    </div>
+  </section>
+
+  <!-- This qoute will not display on a smaller screen-->
+  <section>
+    <div class="d-none d-lg-block">
+          <h4>"The Road Goes Ever On." - J.R.R. Tolkien</h4>
+    </div>
+  </section>
+
+  <!-- Popover implementation-->
+  <section>
+    <div class="bs-example">
+      <div class="mb-2">    
+          <button type="button" class="btn btn-primary btn-lg" id="tinyPopover" data-bs-toggle="popover" title="Popover demo" data-bs-content="Testing Popover">Small Popover</button>
+          <script>
+            $(document).ready(function(){
+                // Show and hide popover with the same speed
+                $("#tinyPopover").popover({
+                    delay: 100
+                }); 
+            });
+            </script>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+    <p>Author: Robert C</p>
+  </footer>
+</html>
+
+
